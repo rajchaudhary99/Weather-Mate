@@ -1,0 +1,65 @@
+.forecast h2 {
+  margin: 25px 0;
+  padding: 0 10px;
+  font-size: 22px;
+}
+
+.forecast .cardWrapper {
+  background-color: var(--boxes-colors);
+  border-radius: 30px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for 3D effect */
+  transition: transform var(--transition), box-shadow var(--transition); /* Smooth transition */
+}
+
+.forecast .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.forecast .card:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.forecast .card img {
+  width: 50px;
+}
+
+.forecast .card .label {
+  color: var(--sec-text-color);
+  font-size: 0.8rem;
+}
+
+.forecast .card span {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Hover effect for the card */
+.forecast .cardWrapper:hover {
+  transform: translateY(-5px); /* Moves the card slightly upward */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+  background-color: var(--boxes-colors); /* Changes background color on hover */
+}
+
+.forecastHeading {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: var(--main-text-color);
+  margin-bottom: 25px;
+  display: inline-block; /* Ensures the span hover works correctly */
+}
+
+.forecastHeading span {
+  display: inline-block; /* Ensures each character can be hovered */
+  transition: color var(--transition), transform var(--transition); /* Smooth transitions */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.forecastHeading span:hover {
+  color: var(--link-color); /* Change color on hover */
+  transform: translateY(-3px); /* Slightly lift the character on hover */
+}
+

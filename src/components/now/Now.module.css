@@ -1,0 +1,92 @@
+.currentWeather .card {
+  background-color: var(--boxes-colors);
+  color: var(--sec-text-color);
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+  transition: transform var(--transition), box-shadow var(--transition); /* Smooth transition */
+}
+
+/* Heading style */
+.currentWeather .card h2 {
+  font-size: 22px;
+  color: var(--main-text-color);
+}
+
+/* Wrapper for content alignment */
+.currentWeather .card .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main temperature style */
+.currentWeather .card .wrapper span {
+  font-size: 55px;
+  color: var(--main-text-color);
+}
+
+/* Weather icon style */
+.currentWeather .card .wrapper img {
+  width: 90px;
+  margin: auto;
+}
+
+/* Weather state style */
+.currentWeather .card .wState {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--sec-text-color);
+  color: var(--sec-text-color);
+}
+
+/* Meta list style */
+.currentWeather .card .metaList {
+  margin-top: 30px;
+}
+
+/* Meta item style */
+.currentWeather .card .metaList .metaItem {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Icon color style */
+.currentWeather .card .metaList .metaItem i {
+  color: var(--main-text-color);
+}
+
+/* Meta item text style */
+.currentWeather .card .metaList .metaItem p {
+  font-size: 0.9rem;
+}
+
+/* Hover effect for the card */
+.currentWeather .card:hover {
+  transform: translateY(-5px); /* Moves the card slightly upward */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+ 
+}
+
+.title {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: var(--main-text-color);
+  margin-bottom: 25px;
+  display: inline-block; /* Ensures the span hover works correctly */
+}
+
+.title span {
+  display: inline-block; /* Ensures each character can be hovered */
+  transition: color var(--transition), transform var(--transition); /* Smooth transitions */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.title span:hover {
+  color: var(--link-color); /* Change color on hover */
+  transform: translateY(-3px); /* Slightly lift the character on hover */
+}
+
