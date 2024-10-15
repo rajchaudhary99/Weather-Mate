@@ -15,7 +15,7 @@ This is a Weather Dashboard application designed to provide users with up-to-dat
   
 ### Links
 
-- Live Site URL : [Weather Application](https://skyfore.netlify.app/)
+- Live Site URL : [Weather Application](https://atmospherealley.netlify.app/)
 
 ### Features
 
